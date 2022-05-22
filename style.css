@@ -298,6 +298,51 @@ footer {
 #register button {
     margin: 1em auto;
 }
+
+/* table calculator */
+.calculator__table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.calculator__table table {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 6px;
+    border: 0.05em solid rgba(204, 204, 204, 0.13);
+    border-radius: 8px;
+}
+.calculator__table td {
+    width: 24px;
+    height: 48px;
+    border: 0.05em solid rgba(204, 204, 204, 0.13);
+    border-radius: 8px;
+    text-align: center;
+}
+.calculator__table td:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+}
+.calculator__table .screen {
+    width: ;
+}
+.calculator__table .screen td{
+    border: none;
+}
+.calculator__table .operations {
+    color: rgb(221, 207, 16);
+}
+
+
+
+
+
+/* Media Queries */
 @media (min-width: 650px) {
     #register .form-container {
         flex-direction: row;
