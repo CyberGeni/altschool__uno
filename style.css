@@ -239,3 +239,58 @@ footer {
 #login form {
     margin: 0 auto;
 }
+/* Register page */
+#register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2em;
+    border-radius: 6px;
+    border: 0.05em solid rgba(204, 204, 204, 0.13);
+}
+#register section {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#register h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.1em;
+    margin-top: 2em;
+}
+#register form {
+    display: flex;
+    flex-direction: column;
+    max-width: unset;
+}
+#register .form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    margin: 0 auto;
+}
+#register input {
+    width: 100%;
+}
+#register .names {
+    display: flex;
+}
+#register .names > * + * {
+  margin-left: 0.50rem;
+}
+#register button {
+    margin: 1em auto;
+}
+@media (min-width: 650px) {
+    #register .form-container {
+        flex-direction: row;
+        max-width: 650px;
+    }
+    #register section:first-child {
+        margin-right: 1.50rem;
+    }
+}
