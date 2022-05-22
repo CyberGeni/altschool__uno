@@ -128,8 +128,10 @@ main {
 }
 #contact {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
     margin: auto;
     padding: 2em;
     border-radius: 6px;
@@ -137,15 +139,31 @@ main {
 }
 #contact div h1 {
     font-size: 2.5em;
+    margin-right: 0.5em;
+}
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 0.75rem;
+    
 }
 #contact aside {
     width: 100%;
+}
+#contact .image {
+    width: 100%;
+    display: flex;
+}
+#contact img {
+    border-radius: 50%;
+    width: 12em;
+    margin: 1em auto;
 }
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 400px;
     margin: auto;
 }
 form button {
@@ -160,6 +178,10 @@ input {
     padding: 1em;
     margin-bottom: 1em;
 }
+input:focus, textarea:focus, select:focus {
+    border: 2px solid white;
+    outline: white;
+}
 select {
     background: transparent;
     border: 1px solid white;
@@ -167,6 +189,11 @@ select {
     width: 100%;
     padding: 1em;
     margin-bottom: 1em;
+}
+option {
+    -webkit-appearance: none;
+    background-color: transparent;
+    color: #021e55;
 }
 textarea {
     background: transparent;
