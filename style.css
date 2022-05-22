@@ -53,6 +53,10 @@ button {
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+button:hover {
+    padding: 0.5em 1.8em;
 }
 .login-button {
     background: rgba(255, 255, 255, 0.027);
@@ -213,7 +217,7 @@ footer {
     line-height: 26px;
 }
 
-
+/* Login page */
 #login {
     display: flex;
     flex-direction: column;
