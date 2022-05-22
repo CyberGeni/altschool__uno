@@ -12,7 +12,7 @@
             <h1> &lt;treasure /&gt;</h1>
             <ul>
                 <li><a href="#about">about me</a></li>
-                <li><a href="">contact me</a></li>
+                <li><a href="#contact">contact me</a></li>
             </ul>
             <div>
                 <button class="login-button"><a href="">Login</a></button>
@@ -42,10 +42,10 @@
                     <div class="degrees">
                         <h3>CERTIFICATIONS: </h3>
                         <div>
-                            <p style="margin-left:.8em">Jobberman Soft Skills Certificate</p>
-                            <p style="margin-left:.8em">inserts presentable certificate here</p>
-                            <p style="margin-left:.8em">inserts presentable certificate here</p>
-                            <p style="margin-left:.8em">inserts presentable certificate here</p>
+                            <p>Jobberman Soft Skills Certificate</p>
+                            <p>inserts presentable certificate here</p>
+                            <p>inserts presentable certificate here</p>
+                            <p>inserts presentable certificate here</p>
                         </div>
                     </div>
                     <p></p>
@@ -53,7 +53,7 @@
              </aside>
              <aside>
                 <h2>&DoubleLongRightArrow; Job Experience</h2> 
-                <div>
+                <div class="experience">
                     <p>&RightArrow; &MediumSpace; &MediumSpace;Community Manager @ TheGirlTechie (May 2022 - Present)</p>
                     <p>&RightArrow; &MediumSpace; &MediumSpace;Community Manager @ Kids That Code NG (March 2021 - Present)</p>
                     
@@ -73,25 +73,25 @@
                 </div>
              </aside>
         </section>
-        <section class="contact">
+        <section id="contact">
             <div>
                 <h1>Send me a message?</h1>
                 <p>I'd love for us to chat, or play a quick game.</p>
             </div>
-            <aside>
-                <form action="">
-                    <input type="text" name="" id="">
-                    <input type="email" name="" id="">
-                    <input type="text" name="" id="">
-                    <select name="Priority" value="Priority" id="">
-                        <option value="">Casual, just chit-chat</option>
-                        <option value="">Important, someone just deleted production DB</option>
-                        <option value="">Top Priority, I have a gig for you</option>
-                        <option value="">Code Red, I have a sweet deal you need to close ASAP</option>
-                    </select>
-                    <button type="submit">Send Message</button>
-                </form>
-            </aside>
+            <form action="">
+                <input type="text" name="" id="" placeholder="What's your name?" required>
+                <input type="email" name="" id="" placeholder="Enter your email..." required>
+                <textarea type="text" rows="7" placeholder="Type your message here..." no-resize required></textarea> 
+                <select name="cars" id="cars" placeholder="Choose a priority" required>
+                    <option value="Choose a priority" default>Choose a priority</option>
+                    <option value="volvo">Casual</option>
+                    <option value="saab">Medium</option>
+                    <option value="mercedes">High</option>
+                    <option value="audi">Top Priority</option>
+                </select>
+                      
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
     <footer>devved by everyone's fav genie | 2022</footer>
