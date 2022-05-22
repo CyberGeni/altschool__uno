@@ -101,24 +101,34 @@ main {
 }
 #about aside p {
     font-size: 1.8em;
-    margin-block: 0.6em;
+    margin-bottom: 0.6em;
 }
 #about aside ul li{ 
     list-style: disc;
     font-size: 1.5em;
     margin: .2em 1.5em;
 }
-
+.cert p {
+    margin-left: 1.3em;
+}
 #about aside .degrees {
     display: flex;
     align-items: flex-start;
     margin-block: 1em;
 }
-#about aside .degrees p {
-    font-size: 1.5em;
-    margin-block: 0;
-    margin-left: .8em;
+@media (max-width: 560px) {
+    #about aside .degrees {
+        flex-direction: column;
+        margin-block: 0em;
+    }
+    #about aside .degrees p {
+        margin-left: 0em !important;
+    }
+    .cert p {
+        margin-left: unset;
+    }
 }
+
 #about .experience {
     font-size: 1em;
 }
@@ -159,6 +169,8 @@ main {
 }
 #contact img {
     border-radius: 50%;
+    border: 2px dashed white;
+    padding: 4px;
     width: 12em;
     margin: 1em auto;
 }
@@ -266,6 +278,7 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: unset;
+    
 }
 #register .form-container {
     display: flex;
@@ -292,5 +305,17 @@ footer {
     }
     #register section:first-child {
         margin-right: 1.50rem;
+    }
+}
+@media (max-width:600px) {
+    nav ul {
+        display: none;
+    }
+    button {
+        padding: 0.2em 1.3em;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0;
     }
 }
