@@ -212,3 +212,26 @@ footer {
     font-size: x-small;
     line-height: 26px;
 }
+
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2em;
+    border-radius: 6px;
+    border: 0.05em solid rgba(204, 204, 204, 0.13);
+}
+#login h1 {
+    font-size: 2.5em;
+}
+#login p {
+    font-size: 1.2em;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+#login form {
+    margin: 0 auto;
+}
