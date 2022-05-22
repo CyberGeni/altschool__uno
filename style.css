@@ -8,32 +8,43 @@
     font-family: 'Alegreya Sans', Verdana, sans-serif;
     color: unset;
 }
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 4px;
+}
 body {
-    
     background: conic-gradient(from 90deg at 50% 0%, #021e55, #66aeff) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
+    width: 100%;
     color: #f8fafc;
-}
-header {
-    border-bottom: 0.05em solid rgba(204, 204, 204, 0.13);
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 0.05em solid rgba(204, 204, 204, 0.13);
+    width: 100%;
     height: 6em;
-    width: 90%;
     margin: 0 auto; 
+    padding: 0 5%;
+    backdrop-filter: blur(10px);
 }
 nav ul {
     display: flex;
+    font-size: 1.2em;
 }
 nav ul > * + * {
   margin-left: 3em;
 }
-nav li a {
-    text-decoration: none;
+nav li a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 4px;
+    color: white;
 }
 button {
     border: 1px solid white;
@@ -54,12 +65,19 @@ button {
 button.register-button {
     color: #021e55;
 }
+main {
+    width: 75%;
+    margin-inline: auto;
+}
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    height: 85vh;
+    height: 100vh;
+    margin-top: 4em;
+    border-bottom: 0.05em solid rgba(204, 204, 204, 0.13);
 }
 .hero p {
     font-size: 1.8em;
@@ -69,4 +87,46 @@ button.register-button {
 }
 .hero img {
     margin-inline: auto;
+}
+#about {
+    border-bottom: 0.05em solid rgba(204, 204, 204, 0.13);
+}
+#about aside {
+    margin-block: 4em;
+}
+#about aside h2 {
+    font-size: 2.3em;
+
+}
+#about aside p {
+    font-size: 1.8em;
+    margin-block: 0.6em;
+}
+#about aside ul li{ 
+    list-style: disc;
+    font-size: 1.5em;
+    margin: .2em 1.5em;
+}
+
+#about aside .degrees {
+    display: flex;
+    align-items: flex-start;
+    margin-block: 1em;
+}
+#about aside .degrees p {
+    font-size: 1.5em;
+    margin-block: 0;
+}
+.reach-me {
+    text-align: center;
+    font-size: 1.5em;
+}
+.reach-me a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+footer {
+    text-align: center;
+    font-size: x-small;
+    line-height: 26px;
 }
