@@ -308,6 +308,7 @@ footer {
     min-height: 100vh;
     font-weight: 500;
     font-size: 1.3em;
+    border: 0.05em solid rgba(204, 204, 204, 0.13);
 }
 .calculator__table table {
     width: 90%;
@@ -316,6 +317,25 @@ footer {
     padding: 6px;
     border: 0.05em solid rgba(204, 204, 204, 0.13);
     border-radius: 8px;
+}
+.calculator__table section {
+    width: 90%;
+    max-width: 400px;
+    margin: 1em auto;
+    padding: 6px;
+    border: 0.05em solid rgba(204, 204, 204, 0.13);
+    border-radius: 8px;
+    text-align: right;
+}
+.calculator__table section h1{
+    margin: 0;
+    padding-inline: 6px;
+    font-size: 2.3em;
+}
+.calculator__table section h4 {
+    margin: 1em 0 0 0;
+    padding-inline: 6px;
+    font-size: 1.1em;
 }
 .calculator__table td {
     width: 24px;
@@ -329,7 +349,7 @@ footer {
     backdrop-filter: blur(16px);
 }
 .calculator__table .screen {
-    width: ;
+    width: 0;
 }
 .calculator__table .screen td{
     border: none;
