@@ -13,6 +13,18 @@ a:hover {
     text-decoration-style: dotted;
     text-underline-offset: 4px;
 }
+.calculator-icon {
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+}
+.calculator-icon img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s  ease-in-out;
+}
+.calculator-icon img {
+    width: 36px;
+}
 body {
     background: conic-gradient(from 90deg at 50% 0%, #021e55, #66aeff) no-repeat center center fixed;
     background-size: cover;
