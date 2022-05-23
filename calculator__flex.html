@@ -4,19 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="calculator__body">
+    <!-- navigation-->
     <nav>
-        <h1> &lt;treasure /&gt;</h1>
+        <h1><a href="index.html">&lt;treasure /&gt;</a></h1>
         <ul>
             <li><a href="#about">about me</a></li>
-            <li><a href="">contact me</a></li>
+            <li><a href="#contact">contact me</a></li>
         </ul>
         <div>
-            <button class="login-button"><a href="">Login</a></button>
-            <button class="register-button"><a href="">Register</a></button>
+            <button class="login-button"><a href="login.html">Login</a></button>
+            <button class="register-button"><a href="register.html">Register</a></button>
         </div> 
-</nav>
+    </nav>
+    <main class="calculator__flex">
+        
+            <section>
+                <h4>12 &times; 34</h4>
+                <h1>567</h1>
+            </section>
+            <section>
+                <div>
+                    <span>AC</span>
+                    <span>C</span>
+                    <span>&percnt;</span>
+                    <span class="operations">&divide;</span>
+                </div>
+                <div>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span class="operations">&times;</span>
+                </div>
+                <div>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span class="operations">-</span>
+                </div>
+                <div>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span class="operations">+</span>
+                </div>
+                <div>
+                    <span>&circlearrowleft;</span>
+                    <span>0</span>
+                    <span>.</span>
+                    <span class="operation">=</span>
+                </div>
+            </section>
+    
+    </main>
+    <footer>*(see table version <a href="calculator__table.html">here</a>)*</footer>
 </body>
 </html>
